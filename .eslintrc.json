@@ -1,0 +1,87 @@
+{
+    "plugins": [
+        "react"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "rules": {
+        "indent": [
+            2,
+            2,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "linebreak-style": [
+            0,
+            "unix"
+        ],
+        "quotes": [
+            2,
+            "single"
+        ],
+        "semi": [
+            2,
+            "never"
+        ],
+        "curly": [
+            2,
+            "all"
+        ],
+        "camelcase": [
+            2,
+            {
+                "properties": "always"
+            }
+        ],
+        "eqeqeq": [
+            2,
+            "smart"
+        ],
+        "one-var-declaration-per-line": [
+            2,
+            "always"
+        ],
+        "key-spacing": [
+            2,
+            {
+                "beforeColon": false
+            },
+            2,
+            {
+                "afterColon": true
+            },
+            2,
+            {
+                "mode": "strict"
+            }
+        ],
+        "space-infix-ops": 2,
+        "@typescript-eslint/space-infix-ops": [
+            "error",
+            {
+                "int32Hint": false
+            }
+        ],
+        "new-cap": 2,
+        "no-case-declarations": 0,
+        "no-console": 1
+    },
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "globals": {
+        "arguments": true
+    }
+}
