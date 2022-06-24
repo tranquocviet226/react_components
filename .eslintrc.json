@@ -8,13 +8,6 @@
     ],
     "parser": "@typescript-eslint/parser",
     "rules": {
-        "indent": [
-            2,
-            2,
-            {
-                "SwitchCase": 1
-            }
-        ],
         "linebreak-style": [
             0,
             "unix"
@@ -29,7 +22,7 @@
         ],
         "curly": [
             2,
-            "all"
+            "multi"
         ],
         "camelcase": [
             2,
@@ -45,30 +38,12 @@
             2,
             "always"
         ],
-        "key-spacing": [
-            2,
-            {
-                "beforeColon": false
-            },
-            2,
-            {
-                "afterColon": true
-            },
-            2,
-            {
-                "mode": "strict"
-            }
-        ],
         "space-infix-ops": 2,
-        "@typescript-eslint/space-infix-ops": [
-            "error",
-            {
-                "int32Hint": false
-            }
-        ],
         "new-cap": 2,
         "no-case-declarations": 0,
-        "no-console": 1
+        "no-console": 1,
+        "react/jsx-uses-react": "off",
+        "react/react-in-jsx-scope": "off"
     },
     "parserOptions": {
         "ecmaVersion": 6,

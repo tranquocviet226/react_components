@@ -1,0 +1,107 @@
+:root {
+  --green-primary: #1dc5a3;
+  --green-secondary: #1795b5;
+  --white: #ffffff;
+}
+
+.vui_button {
+  font-weight: 700;
+  border: 0;
+  border-radius: 3em;
+  cursor: pointer;
+  line-height: 1;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vui_button:hover:enabled:after {
+  left: 120%;
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.vui_button:disabled {
+  opacity: 0.5;
+}
+
+.vui_button:hover:disabled {
+  cursor: not-allowed;
+}
+
+.vui_button-primary {
+  color: var(--white);
+  background-color: var(--green-primary);
+  background-image: linear-gradient(
+    to right,
+    var(--green-primary),
+    var(--green-secondary)
+  );
+}
+
+.vui_button-primary::after {
+  background: var(--white);
+}
+
+.vui_button-primary::after {
+  content: "";
+  height: 155px;
+  left: -75px;
+  opacity: 0.3;
+  position: absolute;
+  top: -50px;
+  transform: rotate(35deg);
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  width: 50px;
+}
+
+.vui_button-secondary {
+  color: var(--green-primary);
+  border: 1px solid var(--green-primary);
+  background-color: transparent;
+}
+
+.vui_button-small {
+  font-size: 12px;
+  padding: 10px 14px;
+}
+
+.vui_button-medium {
+  font-size: 14px;
+  padding: 11px 16px;
+}
+
+.vui_button-large {
+  font-size: 16px;
+  padding: 12px 18px;
+}
+
+.vui_button-loading {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.vui_button-loading-show {
+  opacity: 1 !important;
+  visibility: visible !important;
+  margin-left: 4px;
+}
+
+.vui_button-loading-small {
+  width: 12px;
+  height: 12px;
+}
+
+.vui_button-loading-medium {
+  width: 14px;
+  height: 14px;
+}
+
+.vui_button-loading-large {
+  width: 16px;
+  height: 16px;
+}
